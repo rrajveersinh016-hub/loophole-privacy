@@ -7,29 +7,22 @@
       "destination": "/privacy-policy",
       "permanent": true
     },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true },
     {
-      "source": "/terms.html",
-      "destination": "/terms",
+      "source": "/changelog.html",
+      "destination": "/changelog",
       "permanent": true
     },
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/index.html", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
       "source": "/app-ads.txt",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=300"
-        }
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=300" }
       ]
     }
   ]

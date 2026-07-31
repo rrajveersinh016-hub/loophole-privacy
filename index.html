@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="LoopHole — fast, frictionless media saver. Pull your favorite clips and posts offline in one tap."
+      content="LoopHole — fast, frictionless media saver for Android. Save posts, clips, and WhatsApp statuses offline."
     />
     <meta name="theme-color" content="#000000" />
-    <meta property="og:title" content="LoopHole" />
+    <meta property="og:title" content="LoopHole — Find Your LoopHole" />
     <meta
       property="og:description"
-      content="The fastest, frictionless media management tool."
+      content="Save and organize media from across the web. Fast, dark, frictionless."
     />
-    <meta property="og:image" content="/assets/icon-512.png" />
+    <meta
+      property="og:image"
+      content="https://loophole.vercel.app/assets/og-image.png"
+    />
+    <meta property="og:url" content="https://loophole.vercel.app/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LoopHole" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LoopHole — Find Your LoopHole" />
+    <meta
+      name="twitter:description"
+      content="Save and organize media from across the web. Fast, dark, frictionless."
+    />
+    <meta
+      name="twitter:image"
+      content="https://loophole.vercel.app/assets/og-image.png"
+    />
     <title>LoopHole — Find Your LoopHole</title>
     <link
       rel="icon"
@@ -48,8 +63,10 @@
         <span>Loop<span class="accent">Hole</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="/privacy-policy">Privacy</a>
-        <a href="/terms">Terms</a>
+        <a href="/#features">Features</a>
+        <a href="/faq">FAQ</a>
+        <a href="/support">Support</a>
+        <a href="/changelog">Changelog</a>
         <a
           class="nav-cta"
           href="https://play.google.com/store/apps/details?id=com.loophole.app"
@@ -79,31 +96,82 @@
         </p>
         <div class="cta-row">
           <a
-            class="btn btn-primary"
+            class="play-badge-link"
             href="https://play.google.com/store/apps/details?id=com.loophole.app"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Get it on Google Play"
           >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                d="M3.6 2.3l10.2 9.7L3.6 21.7A2 2 0 0 1 2 20.1V3.9a2 2 0 0 1 1.6-1.6zm12.1 11.5 2.5 2.4-9.4 5.3 6.9-7.7zm2.9-2.8 2.7 1.5c.9.5.9 1.8 0 2.3l-2.7 1.5-3-2.7 3-2.6zM8.8 2.8l9.4 5.3-2.5 2.4L8.8 2.8z"
-              />
-            </svg>
-            Download on Google Play
+            <img
+              class="play-badge"
+              src="/assets/google-play-badge.png"
+              alt="Get it on Google Play"
+              width="215"
+              height="83"
+            />
           </a>
-          <a class="btn btn-ghost" href="/privacy-policy"
-            >Privacy Policy</a
-          >
+          <a class="btn btn-ghost" href="/faq">Read FAQ</a>
         </div>
       </section>
 
-      <section class="features" aria-label="Features">
+      <section class="showcase" id="features" aria-label="App previews">
+        <header class="section-head">
+          <p class="eyebrow">Inside the app</p>
+          <h2>Built for speed. Designed dark.</h2>
+          <p class="section-copy">
+            Store-style previews of LoopHole’s library and Status Saver tools.
+          </p>
+        </header>
+
+        <div class="showcase-grid">
+          <figure class="shot shot-wide">
+            <img
+              src="/assets/store/media-organized.png"
+              alt="LoopHole library — your media organized on a tablet"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Your media, organized</strong>
+              Videos, audio &amp; photos in one place.
+            </figcaption>
+          </figure>
+          <figure class="shot shot-wide">
+            <img
+              src="/assets/store/fast-minimal.png"
+              alt="LoopHole library — fast and minimal media management"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Fast &amp; minimal</strong>
+              Manage your media in a tap.
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img
+              src="/assets/store/status-saver.png"
+              alt="LoopHole Status Saver feature on phone"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Status Saver</strong>
+              Never miss a WhatsApp status again — built into LoopHole.
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img
+              src="/assets/store/save-before-gone.png"
+              alt="LoopHole Status Saver — save before statuses expire"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Save before it’s gone</strong>
+              Statuses vanish in 24 hours. Keep yours.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Highlights">
         <article class="card">
           <h2>Instant extraction</h2>
           <p>No account wall. Paste a link, pull it through, done.</p>
@@ -119,6 +187,26 @@
           <p>Keep saves in a sleek, vantablack library built for speed.</p>
         </article>
       </section>
+
+      <section class="cta-band">
+        <h2>Ready to pull it through?</h2>
+        <p>Free on Google Play. Dark mode by default.</p>
+        <a
+          class="play-badge-link"
+          href="https://play.google.com/store/apps/details?id=com.loophole.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Get it on Google Play"
+        >
+          <img
+            class="play-badge"
+            src="/assets/google-play-badge.png"
+            alt="Get it on Google Play"
+            width="215"
+            height="83"
+          />
+        </a>
+      </section>
     </main>
 
     <footer class="footer">
@@ -130,13 +218,10 @@
       <div class="footer-links">
         <a href="/privacy-policy">Privacy</a>
         <a href="/terms">Terms</a>
-        <a href="mailto:support.loophole@gmail.com">Support</a>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.loophole.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Google Play</a
-        >
+        <a href="/faq">FAQ</a>
+        <a href="/support">Support</a>
+        <a href="/changelog">Changelog</a>
+        <a href="mailto:lionel@apotitech.com">Email</a>
       </div>
     </footer>
   </body>
