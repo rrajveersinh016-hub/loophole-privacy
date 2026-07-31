@@ -1,47 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LoopHole - The fastest, frictionless media management tool. Save and organize your favorite content from across the web.">
-    <title>LoopHole | Find Your LoopHole</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html" class="logo">Loop<span>Hole</span></a>
-        <div class="nav-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LoopHole — fast, frictionless media saver. Pull your favorite clips and posts offline in one tap."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="LoopHole" />
+    <meta
+      property="og:description"
+      content="The fastest, frictionless media management tool."
+    />
+    <meta property="og:image" content="/assets/icon-512.png" />
+    <meta property="og:type" content="website" />
+    <title>LoopHole — Find Your LoopHole</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16.png"
+    />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="brand" href="/">
+        <img
+          src="/assets/favicon-32.png"
+          width="28"
+          height="28"
+          alt=""
+          class="brand-mark"
+        />
+        <span>Loop<span class="accent">Hole</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a
+          class="nav-cta"
+          href="https://play.google.com/store/apps/details?id=com.loophole.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Get the app</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Android · Google Play</p>
+        <div class="hero-mark">
+          <img
+            src="/assets/icon-192.png"
+            width="96"
+            height="96"
+            alt="LoopHole app icon"
+          />
         </div>
-    </nav>
+        <h1>Find your <span class="gradient-text">LoopHole</span>.</h1>
+        <p class="lede">
+          Save and organize media from across the web — fast, dark, and
+          frictionless. One tap. Highest quality available. Offline when you
+          need it.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://play.google.com/store/apps/details?id=com.loophole.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M3.6 2.3l10.2 9.7L3.6 21.7A2 2 0 0 1 2 20.1V3.9a2 2 0 0 1 1.6-1.6zm12.1 11.5 2.5 2.4-9.4 5.3 6.9-7.7zm2.9-2.8 2.7 1.5c.9.5.9 1.8 0 2.3l-2.7 1.5-3-2.7 3-2.6zM8.8 2.8l9.4 5.3-2.5 2.4L8.8 2.8z"
+              />
+            </svg>
+            Download on Google Play
+          </a>
+          <a class="btn btn-ghost" href="/privacy-policy.html"
+            >Privacy Policy</a
+          >
+        </div>
+      </section>
 
-    <div class="container">
-        <main class="hero">
-            <h1 class="headline">Find Your LoopHole.</h1>
-            <p class="subheadline">The fastest, frictionless media management tool. Save and organize your favorite content from across the web with a single tap.</p>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <h3>Instant Extraction</h3>
-                    <p>No logins, no friction. Just pull it through.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Highest Quality</h3>
-                    <p>Automatically detects and secures the best resolution available.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Clean Library</h3>
-                    <p>Manage your media in a sleek, vantablack environment.</p>
-                </div>
-            </div>
-            
-            <a href="#" class="cta-button">Download on Google Play (Coming Soon)</a>
-        </main>
-    </div>
+      <section class="features" aria-label="Features">
+        <article class="card">
+          <h2>Instant extraction</h2>
+          <p>No account wall. Paste a link, pull it through, done.</p>
+        </article>
+        <article class="card">
+          <h2>Best quality</h2>
+          <p>
+            Automatically finds the strongest stream available for the platform.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Clean library</h2>
+          <p>Keep saves in a sleek, vantablack library built for speed.</p>
+        </article>
+      </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2026 1010 Technologies. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="/assets/favicon-32.png" width="20" height="20" alt="" />
+        <span>LoopHole</span>
+      </div>
+      <p>© 2026 Lionel Tchami. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:support.loophole@gmail.com">Support</a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.loophole.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google Play</a
+        >
+      </div>
     </footer>
-</body>
+  </body>
 </html>
